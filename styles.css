@@ -1,0 +1,35 @@
+
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --accent:#2b6cb0;
+  --text:#111827;
+  --muted:#6b7280;
+  --radius:12px;
+  --pad:20px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:960px;margin:0 auto;padding:28px}
+.site-header{background:linear-gradient(90deg, #ffffff, #f1f5f9);box-shadow:0 1px 0 rgba(0,0,0,0.05)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.site-header h1{font-size:1.2rem;margin:0}
+.site-header nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-size:0.95rem}
+
+.hero{background:var(--card);padding:36px;border-radius:var(--radius);margin-top:18px;text-align:center}
+.hero h2{margin:0 0 8px 0}
+.btn{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none}
+
+.card{background:var(--card);padding:18px;border-radius:10px;margin-top:18px;box-shadow:0 6px 18px rgba(11,22,39,0.03)}
+.service-item{margin-bottom:14px}
+.service-item h4{margin:0 0 4px 0;color:var(--accent)}
+
+.site-footer{padding:18px 0;text-align:center;color:var(--muted);margin-top:24px;font-size:0.9rem}
+
+/* Responsive */
+@media(max-width:600px){
+  .site-header .container{flex-direction:column;align-items:flex-start}
+  .site-header nav{margin-top:10px}
+}
